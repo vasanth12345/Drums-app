@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: 'Anton', sans-serif;
+background:#fff;
+height:100vh;
+width:100%;
+display:grid;
+place-items:center;
+}
+h1{
+	position: absolute;
+	top:-5px;
+	left: 50%;
+	transform:translate(-50%);
+	color:transparent;
+	background-image: linear-gradient( 70deg ,rgb(112,29,42) 1%, rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% );
+	letter-spacing:2.5px;
+	-webkit-background-clip:text;
+}
+.main{
+	width:310px;
+	height:300px;
+	border:3px solid rgba(148,14,60,1);
+	position:relative;
+	transform:scale(1.2);
+	margin-top:10px;
+	background:#fff;
+}
+
+img{
+	width:80px;
+	position: absolute;
+filter: drop-shadow(0 0 0.20rem #000);
+}
+
+.crash2,
+.crash1{
+	transform:rotate(-90deg);
+}
+
+.crash1{
+	top:0px;
+	left:6px;
+}
+.crash2{
+	top:0px;
+	right:6px;
+}
+
+.tom1{
+	top:70px;
+	left:32%;
+	transform:translateX(-32%);
+}
+.tom2{
+	top:70px;
+	left:67%;
+	transform:translateX(-67%);
+}
+.tom3{
+	top:100px;
+ 	right:0;
+}
+
+.base2{
+	width:100px!important;
+	left:0;
+	bottom:5px;
+}
+.base1{
+	width:100px!important;
+	right:0;
+	bottom:5px;
+}
+
+.snar{
+	top:150px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.hihat{
+ top:110px;
+ left:0;
+}
+
+
+@media(max-width:420px){
+	body{
+		height:85vh;
+	}
+	h1{
+		top:15px;
+	}
+	.main{
+	width:310px;
+	height:300px;
+	transform:scale(1);
+	}
+}
+
+@media(min-width:720px){
+	body{
+		height:90vh;
+	}
+}
