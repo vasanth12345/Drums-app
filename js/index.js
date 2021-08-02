@@ -1,3 +1,10 @@
+const load =  ()=> {
+const div = document.querySelector('.load');
+div.classList.add('disp');
+}
+
+setTimeout(load, 2500);
+
 const drum = document.querySelectorAll('.d');
 const sound = document.querySelectorAll('.sound');
 const body = document.querySelector('body');
@@ -18,3 +25,6 @@ sound[index].currentTime =0;
 
 });
 });
+
+
+
